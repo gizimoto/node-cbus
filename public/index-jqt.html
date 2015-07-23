@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Sofia</title>
+    <style type="text/css" media="screen">@import "themes/css/jqtouch.css";</style>
+    <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jqt.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/cbus-jqt.js"></script>	
+    <script>
+    var jQT = new $.jQT({    // `new` keyword is now mandatory (was optional before rc6).
+        icon: 'jqtouch.png',
+        statusBar: 'black-translucent',
+        preloadImages: []
+    });
+    </script>
+</head>
+
+<body>
+
+<div data-role="panel" data-display="overlay" data-theme="b" id="left-panel">
+    <ul data-role="listview" id="left-filters">
+        <li data-icon="delete"><a href="#" data-rel="close">&nbsp</a></li>
+        <li><a data-filter="*" href="#">All</a></li>
+        <li class="divider"></li>
+    </ul>
+</div>
+
+<div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="right-panel">
+    <ul data-role="listview">
+        <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+        <li><a data-filter="*" href="#">All</a>
+        <li><a href="#">CONFIG TODO</a></li>
+    </ul>
+</div>
+    
+<div data-role="page" id="page-landing">
+
+    <div data-role="header">
+        <h1>Sofia Automation</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext">Location</a>
+        <a href="#right-panel" data-icon="gear" data-iconpos="notext">Location</a>
+    </div>
+    
+    <div data-role="content">
+        <form>
+            <input type="text" data-type="search" id="device-search">
+        </form>
+        <form class="full-width-slider" id="device-list" data-filter="true" data-input="#device-search">
+        </form>
+                
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h4>Footer</h4>
+    </div>
+    
+</div>
+
+<div data-role="page" id="page-study">
+    <div data-role="header">
+        <h1>Sofia Automation</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext">Location</a>
+        <a href="#right-panel" data-icon="gear" data-iconpos="notext">Location</a>
+    </div>
+    
+    <div data-role="content">
+        <h2>Study</h2>
+        <p>Loading</p>
+    </div>
+    
+    <div data-role="footer">
+        <h4>Footer</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page-theater">
+    <div data-role="header">
+        <h1>Sofia Automation</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext">Location</a>
+        <a href="#right-panel" data-icon="gear" data-iconpos="notext">Location</a>
+    </div>
+    
+    <div data-role="content">
+        <h2>Theater</h2>
+        <p>Loading</p>
+    </div>
+    
+    <div data-role="footer">
+        <h4>Footer</h4>
+    </div>
+</div>
+
+<div data-role="page" id="page-kitchen">
+    <div data-role="header">
+        <h1>Sofia Automation</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext">Location</a>
+        <a href="#right-panel" data-icon="gear" data-iconpos="notext">Location</a>
+    </div>
+    
+    <div data-role="content">
+        <h2>Theater</h2>
+        <p>Loading</p>
+    </div>
+    
+    <div data-role="footer">
+        <h4>Footer</h4>
+    </div>
+</div>
+
+</body>
+
+</html>

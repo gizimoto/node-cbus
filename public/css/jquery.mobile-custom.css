@@ -1,0 +1,32 @@
+/* Hide the number input on slider */
+.full-width-slider input {
+    display: none;
+}
+.full-width-slider .ui-slider-track {
+    margin-left: 15px;
+}
+
+.ui-listview .ui-li-aside {
+    top: 0.2em;
+    right: 1em;
+}
+
+.ui-listview > .ui-li-static, .ui-listview > .ui-li-divider, .ui-listview > li > a.ui-btn {
+    text-align: center;
+}
+
+.ui-listview .ui-li-left {
+	position: absolute;
+	left: 1em;
+	margin: 0;
+	text-align: right;
+}
+
+.ui-popup {
+	width: 100%;
+	max-width: 500px;
+}
+
+.ui-content {
+    padding: 0.5em;
+}
